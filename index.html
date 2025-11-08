@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  
+
   <!-- Video background -->
   <video autoplay muted loop id="bg-video" playsinline>
     <source src="videos/80645-572367655.mp4" type="video/mp4" />
@@ -80,33 +80,23 @@
   <section id="portfolio" tabindex="-1">
     <h1>Portfolio</h1>
     <div class="portfolio-items">
-      <div class="portfolio-item" tabindex="0">
-        <img src="image copy.png" alt="Project 1 Screenshot" />
-        <h3>Project One</h3>
-        <p>Modern web application built with React and Node.js.</p>
+      <a  href="https://games.moorfo.uz/games/bomba-40" target="_blank" class="portfolio-item" tabindex="0">
+        <img src="thumb-DcLJ8id8.png" alt="Project 1 Screenshot" />
+        <h3>💣 10 Bomba – 40 To‘g‘ri</h3>
+        <p>Mantiqiy o‘yin: 40 ta to‘g‘ri tanlov ichida 10 ta bombani topmaslikka harakat qiling!</p>
+      </a>
+      <a  href="https://games.moorfo.uz/games/flappy-bird" target="_blank" class="portfolio-item" tabindex="0">
+        <img src="games1.png" alt="Project 2 Screenshot" />
+        <h3>Flappy Bird Game</h3>
+        <p>Afsonaviy o‘yin — qushni boshqaring va quvurlarga urilmasdan iloji boricha uzoqqa uching!</p>
       </div>
-      <div class="portfolio-item" tabindex="0">
-        <img src="image copy 2.png" alt="Project 2 Screenshot" />
-        <h3>Project Two</h3>
-        <p>Mobile app focused on user experience and performance.</p>
-      </div>
-      <div class="portfolio-item" tabindex="0">
-        <img src="image copy 3.png" alt="Project 3 Screenshot" />
-        <h3>Project Three</h3>
-        <p>API development and integration with third-party services.</p>
-      </div>
-    </div>
   </section>
 
   <!-- Skills Section -->
   <section id="skills" tabindex="-1">
     <h1>Skills</h1>
     <div class="skills-list" role="list" aria-label="Skills list">
-      <div class="skill" role="listitem">JavaScript</div>
-      <div class="skill" role="listitem">React.js</div>
-      <div class="skill" role="listitem">Node.js</div>
       <div class="skill" role="listitem">HTML &amp; CSS</div>
-      <div class="skill" role="listitem">Python</div>
       <div class="skill" role="listitem">Git &amp; GitHub</div>
     </div>
   </section>
@@ -117,7 +107,8 @@
     <form class="contact-form" id="contact-form" aria-label="Contact form">
       <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
       <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" />
-      <textarea id="message" name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+      <textarea id="message" name="message" rows="5" placeholder="Your Message" required
+        aria-required="true"></textarea>
       <button type="submit">Send Message</button>
     </form>
     <p id="form-status" role="alert" aria-live="polite" style="margin-top:20px;"></p>
