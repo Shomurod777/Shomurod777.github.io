@@ -517,32 +517,44 @@ form.contact-form button:hover {
     color: #fff;
     position: relative;
     overflow: hidden;
-  }
-  
-  /* Background Light Effects */
-  #about::before,
-  #about::after {
+}
+
+/* Background Light Effects */
+#about::before,
+#about::after {
     content: "";
     position: absolute;
     width: 600px;
     height: 600px;
-    background: radial-gradient(circle, #00a6d6, transparent 70%);
+
     border-radius: 50%;
     z-index: -1;
     filter: blur(70px);
     animation: floatGlow 8s infinite alternate ease-in-out;
-  }
-  
-  #about::before { top: -120px; left: -150px; }
-  #about::after { bottom: -120px; right: -150px; }
-  
-  @keyframes floatGlow {
-    0% { transform: scale(1); }
-    100% { transform: scale(1.25); }
-  }
-  
-  /* MAIN LAYOUT */
-  .about-wrapper {
+}
+
+#about::before {
+    top: -120px;
+    left: -150px;
+}
+
+#about::after {
+    bottom: -120px;
+    right: -150px;
+}
+
+@keyframes floatGlow {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.25);
+    }
+}
+
+/* MAIN LAYOUT */
+.about-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -552,15 +564,22 @@ form.contact-form button:hover {
     gap: 40px;
     opacity: 0;
     animation: fadeUp 1.3s ease forwards;
-  }
-  
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(40px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  
-  /* TEXT SIDE (LEFT) */
-  .about-text {
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* TEXT SIDE (LEFT) */
+.about-text {
     flex: 1;
     min-width: 300px;
     line-height: 1.8;
@@ -568,28 +587,28 @@ form.contact-form button:hover {
     padding-left: 20px;
     border-left: 3px solid #00a6d6;
     transition: 0.4s ease;
-  }
-  
-  .about-text:hover {
+}
+
+.about-text:hover {
     padding-left: 28px;
     border-left-color: #00a6d6;
-  }
-  
-  .about-text h2 {
+}
+
+.about-text h2 {
     font-size: 2.4rem;
     margin-bottom: 15px;
     color: #00a6d6;
     text-shadow: 0 0 15px #00a6d6;
-  }
-  
-  /* IMAGE SIDE (RIGHT) */
-  .about-img {
+}
+
+/* IMAGE SIDE (RIGHT) */
+.about-img {
     flex: 1;
     display: flex;
     justify-content: center;
-  }
-  
-  .about-img img {
+}
+
+.about-img img {
     width: 340px;
     height: 340px;
     border-radius: 25px;
@@ -599,30 +618,30 @@ form.contact-form button:hover {
         0 0 60px #00a6d6;
     transition: 0.5s ease;
     transform: perspective(900px) rotateY(0deg);
-  }
-  
-  .about-img img:hover {
+}
+
+.about-img img:hover {
     transform: perspective(900px) rotateY(-12deg) scale(1.07);
     box-shadow:
         0 0 35px #00a6d6,
         0 0 90px #00a6d6;
-  }
-  
-  /* RESPONSIVE DESIGN */
-  @media (max-width: 820px) {
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 820px) {
     .about-wrapper {
-      flex-direction: column-reverse;
-      text-align: center;
+        flex-direction: column-reverse;
+        text-align: center;
     }
-  
+
     .about-text {
-      border-left: none;
-      padding-left: 0;
-      font-size: 1.05rem;
+        border-left: none;
+        padding-left: 0;
+        font-size: 1.05rem;
     }
-  
+
     .about-img img {
-      width: 260px;
-      height: 260px;
+        width: 260px;
+        height: 260px;
     }
-  }
+}
