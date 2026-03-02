@@ -894,6 +894,7 @@ body {
     opacity: 0;
     transform: rotateY(90deg) translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: rotateY(0deg) translateY(0);
@@ -930,7 +931,7 @@ body {
   margin-bottom: 25px;
   display: inline-block;
   transition: 0.6s ease;
-  filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
 }
 
 .service-card:hover .s-icon {
@@ -959,6 +960,7 @@ body {
   line-height: 1.7;
   margin: 0;
 }
+
 /* Skills section */
 #skills {
   padding: 80px 20px;
@@ -969,15 +971,17 @@ body {
 /* --- Yangilangan SKILLS Sarlavhasi --- */
 .section-title {
   text-align: center;
-  font-size: 50px;           /* Kattaroq hajm */
+  font-size: 50px;
+  /* Kattaroq hajm */
   font-weight: 900;
   color: #fff;
   text-transform: uppercase;
-  letter-spacing: 10px;      /* Harflar orasidagi keng masofa */
+  letter-spacing: 10px;
+  /* Harflar orasidagi keng masofa */
   margin-bottom: 70px;
   position: relative;
   /* Kuchli neon nuri */
-  text-shadow: 
+  text-shadow:
     0 0 10px rgba(0, 204, 255, 0.8),
     0 0 20px rgba(0, 204, 255, 0.5),
     0 0 40px rgba(0, 204, 255, 0.3);
@@ -1023,14 +1027,19 @@ body {
 .skill-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; width: 0%; height: 4px; /* Dastlab eni 0% */
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  /* Dastlab eni 0% */
   background: var(--clr);
   transition: 0.5s ease;
   box-shadow: 0 0 15px var(--clr);
 }
 
 .skill-card:hover::before {
-  width: 100%; /* Hover bo'lganda to'liq yoyiladi */
+  width: 100%;
+  /* Hover bo'lganda to'liq yoyiladi */
 }
 
 .skill-card:hover {
@@ -1051,7 +1060,8 @@ body {
 
 .skill-card:hover img {
   filter: grayscale(0) brightness(1) drop-shadow(0 0 12px var(--clr));
-  transform: rotateY(360deg); /* 3D aylanish */
+  transform: rotateY(360deg);
+  /* 3D aylanish */
 }
 
 /* Matnlar */
@@ -1075,6 +1085,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
+
 /* Contact section */
 #contact {
   padding: 60px 20px;
@@ -1098,7 +1109,7 @@ body {
   gap: 20px;
 }
 
-.input-group input, 
+.input-group input,
 .input-group textarea {
   width: 100%;
   padding: 15px 20px;
@@ -1112,7 +1123,7 @@ body {
 }
 
 /* Inputga bosilganda neon nuri kuchayishi */
-.input-group input:focus, 
+.input-group input:focus,
 .input-group textarea:focus {
   border-color: #00ccff;
   box-shadow: 0 0 15px rgba(0, 204, 255, 0.4);
@@ -1125,7 +1136,8 @@ body {
   color: #000;
   padding: 15px;
   border: none;
-  border-radius: 50px; /* To'liq yumaloq tugma */
+  border-radius: 50px;
+  /* To'liq yumaloq tugma */
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
@@ -1138,13 +1150,15 @@ body {
 .send-btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 35px rgba(0, 204, 255, 0.9);
-  background: #fff; /* Hover bo'lganda oq rangga o'tishi */
+  background: #fff;
+  /* Hover bo'lganda oq rangga o'tishi */
 }
 
 /* Placeholder rangini biroz oqartirish */
 ::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
+
 /* Responsive */
 @media (max-width: 1024px) {
   .side-menu {
