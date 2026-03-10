@@ -62,3 +62,39 @@ if (form && status) {
         }, 1500);
     });
 }
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const videoPlayer = document.getElementById('bg-video');
+    const videoSource = document.getElementById('video-source');
+
+    const videoList = [
+      'videos/998175465.mp4',
+      'videos/102852-661022019_medium.mp4',
+      'videos/80645-572367655.mp4'
+    ];
+
+    // 1. Tasodifiy indeksni hisoblash
+    let currentVideoIndex = Math.floor(Math.random() * videoList.length);
+    
+    // Konsolda tekshirish uchun (F12 -> Console bo'limiga qarang)
+    console.log("Tanlangan video indeksi: " + currentVideoIndex);
+    console.log("Fayl yo'li: " + videoList[currentVideoIndex]);
+
+    // 2. Videoni yuklash
+    videoSource.src = videoList[currentVideoIndex];
+    videoPlayer.load();
+    videoPlayer.play().catch(e => console.log("Avtomatik ijro to'sildi"));
+
+    // 3. Video tugaganda keyingisiga o'tish
+    videoPlayer.addEventListener('ended', () => {
+        currentVideoIndex = (currentVideoIndex + 1) % videoList.length;
+        videoSource.src = videoList[currentVideoIndex];
+        videoPlayer.load();
+        videoPlayer.play();
+    });
+});
